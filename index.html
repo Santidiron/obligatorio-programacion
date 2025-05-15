@@ -1,123 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+    <body>
 
-    <h1>Pagina de corredores</h1>
-    <img src="./img/header.jpeg" alt="foto de encabezado">
+        <h1>Pagina de corredores</h1>
+        <img src="./img/header.jpeg" alt="foto de encabezado">
 
     
-<button>Datos</button>
-<button>Estadisticas</button>
+        <button>Datos</button>
+        <button>Estadisticas</button>
 
-<div id="datos">
-
-    <h2>Datos</h2>
+        
+                  <article> <!--INICIO DE DATOS-->
+   <section>
+                      <h2>Datos</h2>
     
-    <div id="carreras">
+   
         
-        <h3>Carreras</h3>
-
-        <label for="idNombreParticipante">Nombre</label>
-        
-        <input type="text" name="nombre" id="idNombreParticipante">
-
-        
-        <label for="iddepto">Departamento</label>
-        
-        <select name="depto" id="iddepto">
-
-            <option value="null" selected>---</option>
-            <option value="capital">Montevideo</option>
-            <option value="canelones">canelones</option>
-            <option value="sanjose">San Jose</option>
-            <option value="colonia">Colonia</option>
-            <option value="soriano">Soriano</option>
-            <option value="rionegro">Rio Negro</option>
-            <option value="paysandu">Paysandu</option>
-            <option value="salto">Salto</option>
-            <option value="artigas">Artigas</option>
-            <option value="rivera">Rivera</option>
-            <option value="cerrolargo">Cerro Largo</option>
-            <option value="treintaytres">Treinta y Tres</option>
-            <option value="rocha">Rocha</option>
-            <option value="lavalleja">La Valleja</option>
-            <option value="durazno">Durazno</option>
-            <option value="tacuarembo">Tacuarembo</option>
-            <option value="flores">Flores</option>
-            <option value="florida">Florida</option>
-            <option value="maldonado">Maldonado</option>
-
-
-        </select>
+                       <div id="carreras"> <!--REGISTRO DE CARRERAS-->
+                        
+                  
+                            <h3>Carreras</h3>
 
         
-        <label for="idfecha">Fecha</label>
-        
-        <input type="date" id="idfecha">
-
-
+                            <label for="nombrecorredor">Nombre</label>
+                            <input type="text" name="nombre" id="nombrecorredor">
 
         
-        <label for="idcupo">Cupo</label>
+                            <label for="depto">Departamento</label>
+            
+                                <select name="depto" id="depto">
+                                    <option value="null" selected>---</option>
+                                    <option value="1">1 Montevideo</option>
+                                    <option value="2">2 Canelones</option>
+                                    <option value="3">3 Maldonado</option>
+                                    <option value="4">4 Rocha</option>
+                                    <option value="5">5 Treinta y Tres</option>
+                                    <option value="6">6 Cerro Largo</option>
+                                    <option value="7">7 Rivera</option>
+                                    <option value="8">8 Artigas</option>
+                                    <option value="9">9 Salto</option>
+                                    <option value="10">10 Paysandu</option>
+                                    <option value="11">11 Rio Negro</option>
+                                    <option value="12">12 Soriano</option>
+                                    <option value="13">13 Colonia</option>
+                                    <option value="14">14 San Jose</option>
+                                    <option value="15">15 Flores</option>
+                                    <option value="16">16 Florida</option>
+                                    <option value="17">17 La Valleja</option>
+                                    <option value="18">18 Durazno</option>
+                                    <option value="19">19 Tacuarembo</option>
+                                 </select>
+
         
-        <input type="number" id="idcupo" min="1" max="30">
+                                      <label for="idfecha">Fecha</label>
+                                      <input type="date" id="idfecha">
+
+
+                                        <label for="idcupo">Cupo</label>        
+                                        <input type="number" id="idcupo" min="1" max="30">
         
-        <button>Agregar Carreras</button>
+                                            <button>Agregar Carreras</button>
     
-    </div> <!--DIV CARRERAS-->
+                        </div> <!--FIN REGISTRO CARRERAS-->
 
-    <div id="sponsors">
+                        <div id="corredores"> <!--REGISTRO DE CORREDORES-->
 
-        <h3>Sponsors</h3>
+                            <h3>Corredores</h3>
 
-            <label for="idsponsor">Nombre</label>
-            <input type="text" name="sponsor" id="idsponsor">
-
-                   
-
-
-        <label for="idrubrosponsor">Rubro</label>
-        <select name="rubro" id="idrubrosponsor">
-
-            <option value="null" selected>---</option>
-            <option value="alimenticio">Alimenticio</option>
-            <option value="bancario">Bancario</option>
-            <option value="bebidas">Bebidas</option>
-            <option value="farmaceutico">Farmaceutico</option>
-            <option value="ropa">Ropa Deportiva</option>
-            <option value="estatal">Estatal</option>
-            <option value="general">General Y Otros</option>
+                                    <label for="nombrecorredor">Nombre</label>
+                                    <input type="text" id="nombrecorredor">
         
-        </select>
+                                 <label for="edadcorredor">Edad</label>
+                                <input type="number" id="edadcorredor">
 
-        <label for="idcarrera">Carreras:</label>
-        <select name="listacarreras" id="idcarrera" multiple>
-
-        </select>
-        <button>Agregar/Actualizar Sponsor</button>
-
-    </div> <!--DIV SPONSORS-->
-
-    <div id="corredores">
-
-        <h3>Corredores</h3>
-
-        <label for="idcorredor">Nombre</label>
-        <input type="text" id="idcorredor">
-        <label for="edadcorredor">Edad</label>
-        <input type="number" id="edadcorredor">
-        <label for="CIcorredor">Cedula</label>
-        <input type="number" id="CIcorredor">
+                              <label for="idcorredor">Cedula</label>
+                              <input type="number" id="idcorredor">
+        
         <label for="fechamedica">Fecha de vencimiento de ficha medica</label>
         <input type="date" id="fechamedica">
         
         <label>Tipo de corredor:</label>
-
         <input type="radio" name="corredor" value="1" id="tipocorredor" checked>
         <label for="tipocorredor">Corredor profesional</label>
         <input type="radio" name="corredor" value="1" id="tipocorredor">
@@ -125,14 +92,142 @@
 
         <button>Agregar Corredor</button>
 
-    </div><!--DIV CORREDORES-->
+     </div><!--FIN REGISTRO CORREDORES-->
+
+
+      <div id="sponsors"> <!--REGISTRO SPONSORS-->
+
+        <h3>Sponsors</h3>
+
+            <label for="nombresponsor">Nombre</label>
+            <input type="text" name="sponsor" id="nombresponsor">
+
+          
+            <label for="rubrosponsor">Rubro</label>
+            <select name="rubro" id="rubrosponsor">
+
+                <option value="null" selected>---</option>
+                <option value="alimenticio">Alimenticio</option>
+                <option value="bancario">Bancario</option>
+                <option value="bebidas">Bebidas</option>
+                <option value="farmaceutico">Farmaceutico</option>
+                <option value="ropa">Ropa Deportiva</option>
+                <option value="estatal">Estatal</option>
+                <option value="general">General Y Otros</option>
+        
+            </select>
+
+            <label for="idcarrera">Carreras:</label>
+                <select name="listacarreras" id="idcarrera" multiple></select>
+            
+                <button>Agregar/Actualizar Sponsor</button>
+
+     </div> <!--FIN REGISTRO SPONSORS-->
+
+    
+
+
+                 <div id="inscripciones"> <!--INSCRIPCION A CARRERAS-->
+
+                 <h3>Inscripcion</h3>
+                
+                
+                    <label for="selectorcarrera">Carrera</label>
+                    <select name="selectorcarrera" id="selectorcarrera"></select>
+
+                
+                
+                    <label for="selectorcorredor">Corredor</label>
+                    <select name="selectorcorredor" id="idcorredor"></select>
+                    <button>Inscribir</button>
+
+                </div> <!--FIN INSCRIPCION A CARRERAS-->
+
+
+                 </section> <!--FIN DE DATOS-->
+
+
+               <section>
+
+                    <h2>Estadisticas</h2>
+
+                    <h3>Datos Generales</h3>
+
+                    <p>Promedio de inscriptos por carrera: </p>
+                    
+                    <p>Carrera/s con mas incriptos: </p>
+                        <ul>
+                            <li>sin datos</li>
+                        </ul>
+                        
+                        <p>Carrera/s sin inscriptos ordenadas por fechas</p>
+                        <ul>
+                            <li>sin datos</li>
+                        </ul>
+                    <p>Procentaje de corredores de elite: </p>
+
+                    <h3>Consulta inscriptos</h3> <!--CONSULTA INSCRIPCIONES-->
+                        
+                    <label for="selectorcarrera">Carrera</label>
+                    <select name="selectorcarrera" id="selectorcarrera"></select>
+
+                      <label>Ordenar por:</label>
+                  
+                    <input type="radio" name="ordenador" value="1" id="nombre" checked>
+                    <label for="ordenador">Nombre</label>
+                     
+                    <input type="radio" name="ordenador" value="1" id="numero">
+                    <label for="ordenador">Numero</label>
+                        
+
+                    <h3>Visualizar Mapa:</h3>
+            
+                        <label for="mapa">Por Carreras</label>
+                        <input type="radio" name="mapa" value="1" id="porcarrera" checked>
+                        
+                     
+                        <label for="mapa">Por inscripciones</label>
+                        <input type="radio" name="mapa" value="1" id="porinscripcion">
+
+
+                        <footer>
+
+                            <p>Programacion 1 - Obligatorio 1er semestre 2025 - Autores</p>
+
+                            <p>Grupo N1B - Marcos Medina (Numero estudiante: 365070)</p>
+                            <a href="https://www.linkedin.com/in/marcosmcv/">Linkedin</a>
+                            
+                            <p>Grupo N1B - Santiago Diron (Numero estudiante: )</p>  
+                            <a href="https://www.linkedin.com/in/santiago-dir%C3%B3n-a3a977285/">Linkedin</a>
+                             
+
+                        </footer>
+                        
+                        
+                     
 
 
 
-</div> <!--DIV DATOS-->
 
 
 
 
-</body>
+
+
+
+
+
+               </section>
+          
+
+           
+
+
+
+
+
+
+
+                </article>
+       </body>
 </html>
