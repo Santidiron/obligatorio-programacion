@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Pagina de corredores</h1>
+    <img src="./img/header.jpeg" alt="foto de encabezado">
+
+    
+<button>Datos</button>
+<button>Estadisticas</button>
+
+<div id="datos">
+
+    <h2>Datos</h2>
+    
+    <div id="carreras">
+        
+        <h3>Carreras</h3>
+
+        <label for="idNombreParticipante">Nombre</label>
+        
+        <input type="text" name="nombre" id="idNombreParticipante">
+
+        
+        <label for="iddepto">Departamento</label>
+        
+        <select name="depto" id="iddepto">
+
+            <option value="null" selected>---</option>
+            <option value="capital">Montevideo</option>
+            <option value="canelones">canelones</option>
+            <option value="sanjose">San Jose</option>
+            <option value="colonia">Colonia</option>
+            <option value="soriano">Soriano</option>
+            <option value="rionegro">Rio Negro</option>
+            <option value="paysandu">Paysandu</option>
+            <option value="salto">Salto</option>
+            <option value="artigas">Artigas</option>
+            <option value="rivera">Rivera</option>
+            <option value="cerrolargo">Cerro Largo</option>
+            <option value="treintaytres">Treinta y Tres</option>
+            <option value="rocha">Rocha</option>
+            <option value="lavalleja">La Valleja</option>
+            <option value="durazno">Durazno</option>
+            <option value="tacuarembo">Tacuarembo</option>
+            <option value="flores">Flores</option>
+            <option value="florida">Florida</option>
+            <option value="maldonado">Maldonado</option>
+
+
+        </select>
+
+        
+        <label for="idfecha">Fecha</label>
+        
+        <input type="date" id="idfecha">
+
+
+
+        
+        <label for="idcupo">Cupo</label>
+        
+        <input type="number" id="idcupo" min="1" max="30">
+        
+        <button>Agregar Carreras</button>
+    
+    </div> <!--DIV CARRERAS-->
+
+    <div id="sponsors">
+
+        <h3>Sponsors</h3>
+
+            <label for="idsponsor">Nombre</label>
+            <input type="text" name="sponsor" id="idsponsor">
+
+                   
+
+
+        <label for="idrubrosponsor">Rubro</label>
+        <select name="rubro" id="idrubrosponsor">
+
+            <option value="null" selected>---</option>
+            <option value="alimenticio">Alimenticio</option>
+            <option value="bancario">Bancario</option>
+            <option value="bebidas">Bebidas</option>
+            <option value="farmaceutico">Farmaceutico</option>
+            <option value="ropa">Ropa Deportiva</option>
+            <option value="estatal">Estatal</option>
+            <option value="general">General Y Otros</option>
+        
+        </select>
+
+        <label for="idcarrera">Carreras:</label>
+        <select name="listacarreras" id="idcarrera" multiple>
+
+        </select>
+        <button>Agregar/Actualizar Sponsor</button>
+
+    </div> <!--DIV SPONSORS-->
+
+    <div id="corredores">
+
+        <h3>Corredores</h3>
+
+        <label for="idcorredor">Nombre</label>
+        <input type="text" id="idcorredor">
+        <label for="edadcorredor">Edad</label>
+        <input type="number" id="edadcorredor">
+        <label for="CIcorredor">Cedula</label>
+        <input type="number" id="CIcorredor">
+        <label for="fechamedica">Fecha de vencimiento de ficha medica</label>
+        <input type="date" id="fechamedica">
+        
+        <label>Tipo de corredor:</label>
+
+        <input type="radio" name="corredor" value="1" id="tipocorredor" checked>
+        <label for="tipocorredor">Corredor profesional</label>
+        <input type="radio" name="corredor" value="1" id="tipocorredor">
+        <label for="tipocorredor">Corredor amateur</label>
+
+        <button>Agregar Corredor</button>
+
+    </div><!--DIV CORREDORES-->
+
+
+
+</div> <!--DIV DATOS-->
+
+
+
+
+</body>
+</html>
